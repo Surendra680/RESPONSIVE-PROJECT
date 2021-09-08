@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css" integrity="sha512-SUwyLkI1Wgm4aEZkDkwwigXaOI2HFLy1/YW73asun4sfvlkB9Ecl99+PHfCnfWD0FJjIuFTvWMM7BZPXCckpAA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			
+			<a href="index.html"><img src="image/logo.png"></a> 
+			<div class="navlinks" id="surendra">
+				<i class="fas fa-times" onclick="hidemenu()"></i>
+				<ul>
+					<li><a href="">home</a></li>
+					<li><a href="">about</a></li>
+					<li><a href="">contact us</a></li>
+					<li><a href="">course</a></li>
+					<li><a href="">blog</a></li>
+				</ul>
+
+			</div>
+			<i class="fas fa-bars" onclick="showmenu()"></i>
+		</nav>
+		<div class="textbox">
+			<h1>worlds biggest university</h1>
+			<p>making website is now one of the easiest thing in the world.  you just need to learn html,css , javascript and <br> you are good to go.</p>
+			<a class="btn" href="">visit us to know more</a> 
+		</div>
+	</section>
+	<script>
+		var surendra=document.getElementById("surendra");
+		function showmenu(){
+			surendra.style.right='0';
+
+		}
+		function hidemenu(){
+			surendra.style.right='-200px';
+			
+		}
+	</script>
+</body>
+</html>
